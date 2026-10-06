@@ -27,6 +27,9 @@ such as moving faders, pressing play and cue, and loading songs. This is meant t
 being able to take that data and put it into something else.
 
 
+If that doesn't work, you can try it without the --np flag. Still testing things though.
+
+
 Basically, I ran the nodeJS code from chrisle, looked at how the connection was being made, and re-implemented it in Python.
 I did change it so link local addresses will also work. I added the exception for link local addressing because the Prime 4 
 (in my case) and Pi won't be connected to a routing device, and I'd like to keep the addresses straight.
