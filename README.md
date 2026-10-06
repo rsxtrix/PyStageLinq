@@ -19,7 +19,7 @@ It's pretty easy. Just plug an Ethernet cable into your Denon device with a "Lin
 Raspberry Pi (just about any Pi will do) or an ESP32 (running MicroPython) with an Ethernet RJ-45 port, and run this program using:
 
 
-python3 stagelinq.py
+python3 stagelinq.py --np
 
 
 You will then get output on the CLI showing all available data. You can test it by pressing buttons on your Denon DJ equipment,
