@@ -22,14 +22,14 @@ Raspberry Pi (just about any Pi will do) or an ESP32 (running MicroPython) with 
 python3 stagelinq.py
 
 
-You will then get output on the CLI showing all available data. 
+You will then get output on the CLI showing all available data. You can test it by pressing buttons on your Denon DJ equipment,
+such as moving faders, pressing play and cue, and loading songs. This is meant to be a PoC as well as a building block for
+being able to take that data and put it into something else.
 
 
 Basically, I ran the nodeJS code from chrisle, looked at how the connection was being made, and re-implemented it in Python.
-I did change it so link local addresses will also work. For me, this is part of a project to implement song-aware
-lighting effects through a Raspberry Pi 4 4GB and pass them to controllers using Art-Net over Wi-Fi. I added the
-exception for link local addressing because the Prime 4 (in my case) and Pi won't be connected to a routing device
-and I'd like to keep the addresses straight.
+I did change it so link local addresses will also work. I added the exception for link local addressing because the Prime 4 
+(in my case) and Pi won't be connected to a routing device, and I'd like to keep the addresses straight.
 
 
 It appears that the Prime 4 will accept any token as long as it's the right length. It's worth mentioning that I
